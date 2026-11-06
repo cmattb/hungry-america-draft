@@ -108,6 +108,13 @@ main .wrap > :first-child { margin-top: 0; }
 .card h2 { font-size: 1.25rem; margin: 0 0 0.25rem; }
 .card .meta { color: var(--muted); margin: 0; }
 
+/* Interviews */
+.interview { margin: 0 0 2rem; }
+.interview .meta { color: var(--muted); }
+.interview-video { aspect-ratio: 16 / 9; margin: 1rem 0 0.75rem; background: #111; border-radius: 10px; overflow: hidden; }
+.interview-video iframe, .short-video iframe { display: block; width: 100%; height: 100%; border: 0; }
+.short-video { aspect-ratio: 9 / 16; margin: 0.75rem 0; background: #111; border-radius: 10px; overflow: hidden; }
+
 /* Clips */
 .clip { margin: 0 0 2rem; }
 .clip-video, .clip-still {
@@ -120,6 +127,8 @@ main .wrap > :first-child { margin-top: 0; }
 .clip .meta { color: var(--muted); margin: 0; }
 /* All clips: two across on a phone, more on wider screens */
 .clip-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr)); gap: 1.5rem 1rem; }
+.clip-grid-video { grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+.clip-grid-video .clip-card h3 { min-height: 3.75rem; }
 .clip-still { padding: 0.5rem; font-size: 0.9rem; }
 .clip-card h3 { font-size: 1rem; margin: 0.5rem 0 0.25rem; }
 .clip-card .meta { color: var(--muted); font-size: 0.95rem; margin: 0; }
